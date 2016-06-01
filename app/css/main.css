@@ -57,16 +57,20 @@ ul {
           box-sizing: border-box; }
 
 @font-face {
-  font-family: MuseoSansCyrl;
-  src: url(../fonts/Museosanscyrl500.ttf); }
+  font-family: MuseoSansCyrl900I;
+  src: url(../fonts/MuseoSansCyrl_900_Italic.otf); }
 
 @font-face {
-  font-family: MuseoSansCyrlI900;
-  src: url(../fonts/Museo_Sans_Cyrl_900.ttf); }
+  font-family: MuseoSansCyrl700;
+  src: url(../fonts/MuseoSansCyrl_700.otf); }
 
 @font-face {
-  font-family: MuseoSansCyrl900;
-  src: url(../fonts/Museo_Sans_Cyrl_900.ttf); }
+  font-family: MuseoSansCyrl500;
+  src: url(../fonts/MuseoSansCyrl_500.otf); }
+
+@font-face {
+  font-family: MuseoSansCyrl300;
+  src: url(../fonts/MuseoSansCyrl_300.otf); }
 
 .top {
   background-color: #f5f5f5;
@@ -84,11 +88,10 @@ ul {
     line-height: 1; }
   .top_mnu a {
     color: #424242;
-    font-family: MuseoSansCyrl;
+    font-family: MuseoSansCyrl700;
     font-size: 14px;
     border: 2px solid transparent;
     padding: 4px 7px;
-    font-weight: 700;
     line-height: 1; }
     .top_mnu a:hover {
       border: 2px solid #ff9000;
@@ -104,10 +107,9 @@ ul {
 
 .top_phone {
   color: #2f2f2f;
-  font-family: MuseoSansCyrl;
+  font-family: MuseoSansCyrl700;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 700;
   float: left;
   background: url("../img/top_icon_phone.png") no-repeat left center;
   padding-left: 22px;
@@ -120,7 +122,7 @@ ul {
   float: right; }
   .top_mail a {
     color: #ff950c;
-    font-family: MuseoSansCyrl;
+    font-family: MuseoSansCyrl700;
     font-size: 14px;
     text-decoration: underline;
     float: left;
@@ -133,7 +135,7 @@ ul {
   background: url("../img/top_icon_adress.png") no-repeat left center;
   padding-left: 22px;
   color: #2f2f2f;
-  font-family: MuseoSansCyrl;
+  font-family: MuseoSansCyrl500;
   font-size: 12px;
   margin-top: 10px;
   font-weight: 500;
@@ -153,9 +155,8 @@ ul {
   position: relative; }
   .slider_wrap h2 {
     color: black;
-    font-family: MuseoSansCyrlI900;
+    font-family: MuseoSansCyrl900I;
     font-size: 24px;
-    font-style: italic;
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 0; }
@@ -170,7 +171,7 @@ ul {
   .slider_text li {
     height: 22px;
     color: black;
-    font-family: MuseoSansCyrl;
+    font-family: MuseoSansCyrl300;
     font-size: 16px;
     margin-bottom: 14px;
     padding-left: 40px;
