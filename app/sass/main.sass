@@ -62,6 +62,10 @@ ul
   src: url(../fonts/MuseoSansCyrl_900_Italic.otf)
   
 @font-face
+	font-family: MuseoSansCyrl900
+	src: url(../fonts/MuseoSansCyrl_900.otf)
+    
+@font-face
   font-family: MuseoSansCyrl700
   src: url(../fonts/MuseoSansCyrl_700.otf)
   
@@ -143,6 +147,12 @@ ul
 .nopadding 
 	padding: 0 !important
 	
+.nopadding-l 
+	padding-left: 0 !important
+
+.nopadding-r
+	padding-right: 0 !important
+
 .slider_wrap 
 	max-width: 1170px
 	width: 100%
@@ -161,7 +171,6 @@ ul
 .slider_ul 
 	z-index: 10
 
-	
 .slider_text
 	position: absolute
 	top: 55px
@@ -243,19 +252,221 @@ ul
 
 .left_mnu 
 	width: 270px
+	margin-bottom: 20px
 	background-color: rgb(242, 242, 242)
 	border: 3px solid rgb(255, 144, 0)
 	border-radius: 5px
 	box-sizing: border-box
-	padding: 22px 0 10px 0
+	padding: 22px 0 0
 	h2 
 		color: rgb(47, 47, 47)
 		font-family: MuseoSansCyrl900
 		font-size: 18px
-	
+		padding: 0 20px
+		margin-bottom: 20px
+	li 
+	a 
+		font-family: MuseoSansCyrl500
+		display: block
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl500
+		font-size: 15px
+		padding: 10px 20px
+		box-sizing: border-box
+		border-top: 1px solid #DAD9D7
+		line-height: 1.2 
+		&:hover 
+			background-color: #ff9000
+			text-decoration: none 
 
+.main_content 
+	padding-bottom: 20px
+	overflow: hidden
+		
 .content 
 	float: right
 	width: 870px
- 
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl300
+	font-size: 15px
+	line-height: 21px
+	p 
+		margin-bottom: 20px
+		&:last-child 
+			margin-bottom: 0
+		
 	
+h1 
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl700
+	font-size: 30px
+	margin-bottom: 35px
+
+.img_block 
+	width: 100%
+	background-color: rgb(242, 242, 242)
+	border-radius: 5px
+	box-sizing: border-box
+	padding: 20px
+	margin-bottom: 25px
+	img 
+		border-radius: 5px 
+	
+.floatleft 
+	float: left
+	margin: 0 30px 15px 0 
+
+.floatright 
+	float: right
+	margin: 0 15px 30px 0 
+
+.price_table
+	background-color: #F2F2F2 
+	width: 100%
+	td 
+		padding: 10px 15px
+		box-sizing: border-box
+
+	thead 
+		background-color: #E0E0E0 
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl900
+		font-size: 15px
+		td 
+			padding: 15px
+	tbody 
+		tr 
+			color: rgb(47, 47, 47)
+			font-family: MuseoSansCyrl500
+			font-size: 15px
+		td 
+			border-bottom: 1px solid rgb(224, 224, 224)
+			&:nth-child(2n-1) 
+				width: 50%
+			&:nth-child(2n) 
+				width: 30%
+			
+.last_news
+	margin-top: 45px
+	h3 
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl900
+		font-size: 18px
+		margin-bottom: 30px
+	ul 	 	
+	
+	a
+		display: block
+		float: left
+		margin-bottom: 25px
+		color: black
+		font-family: MuseoSansCyrl300
+		font-size: 15px
+		text-decoration: underline
+		&:hover 
+			text-decoration: none
+				
+	.all_lnews_link 
+		display: block
+		text-align: left
+		color: rgb(255, 144, 0)
+		font-family: MuseoSansCyrl700
+		font-size: 15px
+		text-decoration: underline
+		&:hover 
+			text-decoration: none
+	
+.left_form
+	width: 270px
+	background-color: rgb(255, 144, 0)
+	border-radius: 5px
+	box-sizing: border-box
+	padding: 20px
+	h3 
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl900
+		font-size: 18px
+		margin-bottom: 20px
+		text-align: center
+		
+	input 
+		box-sizing: border-box
+		height: 39px
+		width: 100%
+		background-color: white
+		border: 2px solid rgb(255, 186, 96)
+		border-radius: 5px
+		padding: 0 15px
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl300
+		font-size: 15px
+		margin-bottom: 10px
+	
+	textarea 
+		box-sizing: border-box
+		width: 100%
+		height: 89px
+		background-color: white
+		border: 2px solid rgb(255, 186, 96)
+		border-radius: 5px
+		padding: 10px 15px
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl300
+		font-size: 15px
+		margin-bottom: 10px
+	
+	button 
+		width: 100%
+		height: 39px
+		background-color: black
+		border: none
+		border-radius: 5px
+		text-align: center
+		box-sizing: border-box
+		color: white
+		font-family: MuseoSansCyrl300
+		font-size: 15px
+		line-height: 18px
+		
+.left_widget_vk 
+	text-align: center
+	margin-top: 30px
+
+.footer 
+	background-color: #F2F2F2 
+	padding: 30px 0
+
+.copy
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl300
+	font-size: 14px
+	
+.footer_adress
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl500
+	font-size: 12px
+	margin-left: 45px
+	padding-left: 20px
+	background: url("../img/top_icon_adress.png") no-repeat left center
+	height: 14px
+	line-height: 1.2
+
+.footer_phone 
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl700
+	font-size: 18px
+	padding-left: 20px
+	margin-left: 30px
+	background: url("../img/top_icon_phone.png") no-repeat left center
+	span
+		font-size: 12px
+		font-family: MuseoSansCyrl500
+
+.footer_mail
+	a
+		color: rgb(255, 149, 12)
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		text-decoration: underline
+		padding-left: 20px
+		background: url("../img/top_icon_mail.png") no-repeat left center

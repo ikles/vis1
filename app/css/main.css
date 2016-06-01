@@ -61,6 +61,10 @@ ul {
   src: url(../fonts/MuseoSansCyrl_900_Italic.otf); }
 
 @font-face {
+  font-family: MuseoSansCyrl900;
+  src: url(../fonts/MuseoSansCyrl_900.otf); }
+
+@font-face {
   font-family: MuseoSansCyrl700;
   src: url(../fonts/MuseoSansCyrl_700.otf); }
 
@@ -144,6 +148,12 @@ ul {
 
 .nopadding {
   padding: 0 !important; }
+
+.nopadding-l {
+  padding-left: 0 !important; }
+
+.nopadding-r {
+  padding-right: 0 !important; }
 
 .slider_wrap {
   max-width: 1170px;
@@ -246,18 +256,225 @@ ul {
 /**************************************************/
 .left_mnu {
   width: 270px;
+  margin-bottom: 20px;
   background-color: #f2f2f2;
   border: 3px solid #ff9000;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 22px 0 10px 0; }
+  padding: 22px 0 0; }
   .left_mnu h2 {
     color: #2f2f2f;
     font-family: MuseoSansCyrl900;
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 0 20px;
+    margin-bottom: 20px; }
+  .left_mnu a {
+    font-family: MuseoSansCyrl500;
+    display: block;
+    color: #2f2f2f;
+    font-family: MuseoSansCyrl500;
+    font-size: 15px;
+    padding: 10px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-top: 1px solid #DAD9D7;
+    line-height: 1.2; }
+    .left_mnu a:hover {
+      background-color: #ff9000;
+      text-decoration: none; }
+
+.main_content {
+  padding-bottom: 20px;
+  overflow: hidden; }
 
 .content {
   float: right;
-  width: 870px; }
+  width: 870px;
+  color: #2f2f2f;
+  font-family: MuseoSansCyrl300;
+  font-size: 15px;
+  line-height: 21px; }
+  .content p {
+    margin-bottom: 20px; }
+    .content p:last-child {
+      margin-bottom: 0; }
+
+h1 {
+  color: #2f2f2f;
+  font-family: MuseoSansCyrl700;
+  font-size: 30px;
+  margin-bottom: 35px; }
+
+.img_block {
+  width: 100%;
+  background-color: #f2f2f2;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 25px; }
+  .img_block img {
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+
+.floatleft {
+  float: left;
+  margin: 0 30px 15px 0; }
+
+.floatright {
+  float: right;
+  margin: 0 15px 30px 0; }
+
+.price_table {
+  background-color: #F2F2F2;
+  width: 100%; }
+  .price_table td {
+    padding: 10px 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .price_table thead {
+    background-color: #E0E0E0;
+    color: #2f2f2f;
+    font-family: MuseoSansCyrl900;
+    font-size: 15px; }
+    .price_table thead td {
+      padding: 15px; }
+  .price_table tbody tr {
+    color: #2f2f2f;
+    font-family: MuseoSansCyrl500;
+    font-size: 15px; }
+  .price_table tbody td {
+    border-bottom: 1px solid #e0e0e0; }
+    .price_table tbody td:nth-child(2n-1) {
+      width: 50%; }
+    .price_table tbody td:nth-child(2n) {
+      width: 30%; }
+
+.last_news {
+  margin-top: 45px; }
+  .last_news h3 {
+    color: #2f2f2f;
+    font-family: MuseoSansCyrl900;
+    font-size: 18px;
+    margin-bottom: 30px; }
+  .last_news a {
+    display: block;
+    float: left;
+    margin-bottom: 25px;
+    color: black;
+    font-family: MuseoSansCyrl300;
+    font-size: 15px;
+    text-decoration: underline; }
+    .last_news a:hover {
+      text-decoration: none; }
+  .last_news .all_lnews_link {
+    display: block;
+    text-align: left;
+    color: #ff9000;
+    font-family: MuseoSansCyrl700;
+    font-size: 15px;
+    text-decoration: underline; }
+    .last_news .all_lnews_link:hover {
+      text-decoration: none; }
+
+.left_form {
+  width: 270px;
+  background-color: #ff9000;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px; }
+  .left_form h3 {
+    color: #2f2f2f;
+    font-family: MuseoSansCyrl900;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .left_form input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 39px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #ffba60;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    padding: 0 15px;
+    color: #2f2f2f;
+    font-family: MuseoSansCyrl300;
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .left_form textarea {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 89px;
+    background-color: white;
+    border: 2px solid #ffba60;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    padding: 10px 15px;
+    color: #2f2f2f;
+    font-family: MuseoSansCyrl300;
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .left_form button {
+    width: 100%;
+    height: 39px;
+    background-color: black;
+    border: none;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: white;
+    font-family: MuseoSansCyrl300;
+    font-size: 15px;
+    line-height: 18px; }
+
+.left_widget_vk {
+  text-align: center;
+  margin-top: 30px; }
+
+.footer {
+  background-color: #F2F2F2;
+  padding: 30px 0; }
+
+.copy {
+  color: #2f2f2f;
+  font-family: MuseoSansCyrl300;
+  font-size: 14px; }
+
+.footer_adress {
+  color: #2f2f2f;
+  font-family: MuseoSansCyrl500;
+  font-size: 12px;
+  margin-left: 45px;
+  padding-left: 20px;
+  background: url("../img/top_icon_adress.png") no-repeat left center;
+  height: 14px;
+  line-height: 1.2; }
+
+.footer_phone {
+  color: #2f2f2f;
+  font-family: MuseoSansCyrl700;
+  font-size: 18px;
+  padding-left: 20px;
+  margin-left: 30px;
+  background: url("../img/top_icon_phone.png") no-repeat left center; }
+  .footer_phone span {
+    font-size: 12px;
+    font-family: MuseoSansCyrl500; }
+
+.footer_mail a {
+  color: #ff950c;
+  font-family: MuseoSansCyrl700;
+  font-size: 14px;
+  text-decoration: underline;
+  padding-left: 20px;
+  background: url("../img/top_icon_mail.png") no-repeat left center; }
