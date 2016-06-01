@@ -77,6 +77,17 @@ ul
   font-family: MuseoSansCyrl300
   src: url(../fonts/MuseoSansCyrl_300.otf)
 
+@font-face
+  font-family: MuseoSansCyrl700I
+  src: url(../fonts/MuseoSansCyrl_700_Italic.otf)
+
+@font-face
+  font-family: MuseoSansCyrl300I
+  src: url(../fonts/MuseoSansCyrl_300_Italic.otf)
+
+b, strong 
+	font-family: MuseoSansCyrl700
+
 .top
 	background-color: #f5f5f5 
 	overflow: hidden
@@ -301,6 +312,19 @@ h1
 	font-family: MuseoSansCyrl700
 	font-size: 30px
 	margin-bottom: 35px
+	line-height: 1
+
+h2
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl700
+	font-size: 24px
+	margin-bottom: 20px
+
+h3
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl900
+	font-size: 18px
+	margin-bottom: 20px
 
 .img_block 
 	width: 100%
@@ -318,7 +342,7 @@ h1
 
 .floatright 
 	float: right
-	margin: 0 15px 30px 0 
+	margin: 0 0 15px 30px
 
 .price_table
 	background-color: #F2F2F2 
@@ -470,3 +494,98 @@ h1
 		text-decoration: underline
 		padding-left: 20px
 		background: url("../img/top_icon_mail.png") no-repeat left center
+		
+.bread 
+	width: 100%
+	padding: 0 15px
+	box-sizing: border-box
+	margin-bottom: 12px
+	li 
+		float: left
+		font-size: 11px
+		text-transform: uppercase
+		font-family: MuseoSansCyrl700I
+		a
+			color: black
+			text-decoration: underline
+			&:after 
+				line-height: 0.8
+				font-size: 12px
+				font-family: MuseoSansCyrl700I
+				content: ">"
+				float: right
+				margin-right: 5px
+				margin-left: 5px
+				display: inline
+		span
+			color: rgb(255, 144, 0)
+
+.content 
+	li 
+		margin-bottom: 13px
+		padding-left: 40px
+		min-height: 22px
+	ul 
+		li 
+			background: url("../img/check_li.png") no-repeat left top
+	ol 
+		list-style-type: none
+		counter-reset: num
+		li
+			&:before 
+				content: counter(num) '. '
+				counter-increment: num
+				color: rgb(255, 144, 0)
+				font-family: MuseoSansCyrl900I
+				font-size: 18px
+				text-transform: uppercase
+ 
+.lists 
+	margin-bottom: 40px
+	overflow: hidden
+
+.br5 
+	border-right: 5px
+
+.imgs 
+	margin-bottom: 50px
+	overflow: hidden
+
+blockquote
+	background-color: #F2F2F2 
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl300I
+	font-size: 15px
+	line-height: 21px
+	padding: 25px 60px
+	box-sizing: border-box
+	width: 100%
+	border-radius: 5px
+	position: relative
+	&:before
+    content: '“'
+    position: absolute
+    top: 10px
+    left: 5px
+    line-height: 1
+	b 
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl500
+		font-size: 15px
+	&:after
+  	content: '”'
+  	margin-bottom: 15px
+  	position: absolute
+  	bottom: 15px
+  	right: 35px
+	p
+	&:before, &:after
+		color: rgb(255, 144, 0)
+		font-family: "MV Boli"
+		font-size: 72px
+		font-weight: 400
+.ml0 
+	margin-left: 0 !important
+	
+.mb0 
+	margin-bottom: 0 !important
