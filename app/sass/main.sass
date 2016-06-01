@@ -46,6 +46,8 @@ ul
 	padding: 0
 	margin: 0
 
+@import _fonts
+
 .wrapper 
 	width: 100%
 	margin: auto
@@ -56,34 +58,6 @@ ul
 	margin: auto
 	overflow: hidden
 	box-sizing: border-box
-
-@font-face
-  font-family: MuseoSansCyrl900I
-  src: url(../fonts/MuseoSansCyrl_900_Italic.otf)
-  
-@font-face
-	font-family: MuseoSansCyrl900
-	src: url(../fonts/MuseoSansCyrl_900.otf)
-    
-@font-face
-  font-family: MuseoSansCyrl700
-  src: url(../fonts/MuseoSansCyrl_700.otf)
-  
-@font-face
-  font-family: MuseoSansCyrl500
-  src: url(../fonts/MuseoSansCyrl_500.otf)
-  
-@font-face
-  font-family: MuseoSansCyrl300
-  src: url(../fonts/MuseoSansCyrl_300.otf)
-
-@font-face
-  font-family: MuseoSansCyrl700I
-  src: url(../fonts/MuseoSansCyrl_700_Italic.otf)
-
-@font-face
-  font-family: MuseoSansCyrl300I
-  src: url(../fonts/MuseoSansCyrl_300_Italic.otf)
 
 b, strong 
 	font-family: MuseoSansCyrl700
@@ -251,7 +225,7 @@ b, strong
   display: block
   margin: 0 1.5px
   background: #000
-  border-radius: 9px
+  border-radius: 50px
   &:focus 
   	outline: none 		
   
@@ -347,6 +321,8 @@ h3
 .price_table
 	background-color: #F2F2F2 
 	width: 100%
+	margin-top: 20px
+	margin-bottom: 20px
 	td 
 		padding: 10px 15px
 		box-sizing: border-box
@@ -589,3 +565,26 @@ blockquote
 	
 .mb0 
 	margin-bottom: 0 !important
+
+.tags 
+	height: 50px
+	overflow: hidden
+	padding-top: 23px
+	border-top: 1px solid #e0e0e0
+	box-sizing: border-box 
+	a
+		color: rgb(255, 144, 0)
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		text-decoration: underline
+		margin-right: 30px
+		display: inline-block
+		&:hover 
+			text-decoration: none
+	.all_tags, .hide_tags 
+		color: black
+	
+.hide_tags 
+	display: none
+
+@import _media
