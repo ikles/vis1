@@ -2,24 +2,184 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
-	.w1200 
-		width: 100%
+	.tags 
+		position: relative
+		margin-bottom: 15px
+		a 
+			margin-bottom: 10px
+		
+
+	.all_tags 
+		position: absolute
+		right: 0
+		top: 23px
+		padding-left: 15px
+		background-color: #FFF 
 	
+	.imgs 
+		img 
+			width: 100%
+			height: 227px
+	 		
+	.main-mnu
+		display: none
+		float: right
+		min-width: 250px
+		text-align: right
+		background-color: #1C242C 
+		width: auto
+		position: absolute
+		top: 45px
+		right: 0
+		height: auto
+		z-index: 10
+		margin-top: 0
+		ul 
+			display: inline
+		li 
+			display: block
+			float: none
+		a 
+			display: block 
+			color: #FFF 
+			border-radius: 0
+			border: none
+			padding: 10px
+			&:hover 
+				text-decoration: underline
+					
+		a:hover, li.active a 
+			border: none
+			
+	.top_phone 
+		margin-right: 10px
+	 
+	.top_mail 
+		float: left
+		
+	.top_adress 
+		float: left
+		text-align: left
+	
+	.col-mnu 
+		float: right !important
+	
+	.col-contacts 
+		float: left !important
+	
+	.content, .left_mnu, .left_form
+		width: 100%
+			
+	.footer_adress, .footer_phone 
+		margin-left: 0
+		
+	.footer_adress 
+		padding-left: 25px
+	 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 
-	/**/	
+	.content 
+		ul 
+			margin-bottom: 20px
+
+	.lists 
+		margin-bottom: 10px
+
+	.imgs 
+		margin-bottom: 20px
+		img 
+			width: auto
+			height: auto
+			float: left
+			margin-bottom: 10px !important
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/			
+ 	
+
+	h1 
+		margin-bottom: 15px
+	.footer_adress, .footer_phone, .footer_mail 
+		text-align: center
+		background: none
+	.footer_adress, .footer_phone 
+		margin-bottom: 10px
+	.last_news 
+		display: none
+		
+	.col-logo 
+		text-align: center
+		
+	.top 
+		height: auto 
+		margin-bottom: 0
+		
+	.top_adress 
+		margin-bottom: 20px
+	
+	.logo 
+		width: 100%
+		background-color: #FF9000 
+		display: block
+		border-radius:  0 0 5px 5px
+		margin: auto
+	
+	.left_widget_vk 
+		display: none
+		
+	.top_slider_wrap 
+		overflow: hidden
+		background-color: #F5F5F5 
+	
+	
+	
+@media only screen and (max-width : 600px) 
+	/**/
+	
+		
+	
+
 @media only screen and (max-width : 570px) 
-	/**/	
+	.top_mail, .top_phone, .top_adress
+		margin-top: 0
+		margin-bottom: 10px
+	.logo 
+		margin-bottom: 10px
+		
+	.price_table tbody td:nth-child(2n-1), .price_table tbody td:nth-child(2n) 
+		width: auto
+	
+	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) 
-	/**/	
+	.slider_text 
+		top: 40px
+		padding-right: 20px
+		overflow: hidden
+	.slider_wrap
+		h2 
+			font-size: 20px
+			margin-bottom: 10px
+			
+	.slider_text
+		li 
+			margin-bottom: 10px
+			font-size: 14px
+			line-height: 1.5
+		
+	.price_table td 
+		font-size: 13px
+		
+	
 @media only screen and (max-width : 400px) 
-	/**/	
+	.price_table td 
+		font-size: 11px
+	.slider_text 
+		top: 40px
 @media only screen and (max-width : 360px) 
-	/**/	
+		h2 
+			font-size: 18px
+		
+		
 
 @media only screen and (max-width : 320px) 
 	/**/	
@@ -37,7 +197,7 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
+@media only screen and (min-width : 1200px)
 	.main-mnu 
 		display: block !important
 	a 

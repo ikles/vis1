@@ -1,3 +1,5 @@
+@import _mnu
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
   margin: 0
   padding: 0
@@ -56,7 +58,7 @@ ul
 	max-width: 1200px
 	width: 100%
 	margin: auto
-	overflow: hidden
+	//overflow: hidden
 	box-sizing: border-box
 
 b, strong 
@@ -64,8 +66,8 @@ b, strong
 
 .top
 	background-color: #f5f5f5 
-	overflow: hidden
 	margin-bottom: 20px
+	height: 64px
 
 .top_mnu
 	margin-top: 27px
@@ -161,7 +163,7 @@ b, strong
 	top: 55px
 	left: 42px
 	li
-		height: 22px
+		min-height: 22px
 		color: black
 		font-family: MuseoSansCyrl300
 		font-size: 16px
@@ -174,7 +176,9 @@ b, strong
   position: relative
   width: 100%
   overflow: hidden
-  margin-bottom: 30px
+  
+.top_slider_wrap
+	margin-bottom: 30px
 
 .slides
   height: 100% 
@@ -323,17 +327,28 @@ h3
 	width: 100%
 	margin-top: 20px
 	margin-bottom: 20px
+	border-radius: 5px 
+	overflow: hidden
 	td 
 		padding: 10px 15px
 		box-sizing: border-box
+		vertical-align: middle
 
-	thead 
-		background-color: #E0E0E0 
-		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl900
-		font-size: 15px
-		td 
-			padding: 15px
+	tr 
+		&:first-child 
+			color: rgb(47, 47, 47)
+			font-family: MuseoSansCyrl900
+			font-size: 15px
+			border-radius:  5px
+			overflow: hidden
+			td 
+				background-color: #E0E0E0
+			
+		
+	td 
+		padding: 15px
+		&:first-child 
+			
 	tbody 
 		tr 
 			color: rgb(47, 47, 47)
@@ -431,10 +446,12 @@ h3
 .left_widget_vk 
 	text-align: center
 	margin-top: 30px
+	margin-bottom: 20px
 
 .footer 
 	background-color: #F2F2F2 
 	padding: 30px 0
+	overflow: hidden
 
 .copy
 	color: rgb(47, 47, 47)
@@ -448,8 +465,9 @@ h3
 	margin-left: 45px
 	padding-left: 20px
 	background: url("../img/top_icon_adress.png") no-repeat left center
-	height: 14px
+	min-height: 14px
 	line-height: 1.2
+	overflow: hidden
 
 .footer_phone 
 	color: rgb(47, 47, 47)
@@ -476,14 +494,20 @@ h3
 	padding: 0 15px
 	box-sizing: border-box
 	margin-bottom: 12px
+	overflow: hidden
+	padding-bottom: 3px
 	li 
 		float: left
 		font-size: 11px
 		text-transform: uppercase
 		font-family: MuseoSansCyrl700I
+		margin-bottom: 10px
 		a
 			color: black
 			text-decoration: underline
+			&:hover 
+				text-decoration: none
+			
 			&:after 
 				line-height: 0.8
 				font-size: 12px
@@ -499,10 +523,10 @@ h3
 .content 
 	li 
 		margin-bottom: 13px
-		padding-left: 40px
 		min-height: 22px
 	ul 
 		li 
+			padding-left: 40px
 			background: url("../img/check_li.png") no-repeat left top
 	ol 
 		list-style-type: none
@@ -586,5 +610,16 @@ blockquote
 	
 .hide_tags 
 	display: none
+
+.clear 
+	clear: both
+
+.right 
+	float: right !important
+
+.left 
+	float: left !important
+
+
 
 @import _media
